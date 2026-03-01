@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Edem Photo Artist</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <div class="logo">Edem Photo Artist</div>
+
+      <nav class="nav">
+        <a href="#portfolio">Портфоліо</a>
+        <a href="#services">Послуги</a>
+        <a href="#contacts">Контакти</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero__inner">
+        <div>
+          <h1>Фотосесії у Києві</h1>
+          <p>Весільні • Сімейні • Портрети • Контент для Instagram</p>
+
+          <div class="hero__buttons">
+            <a class="btn" href="#contacts">Записатися</a>
+            <a class="btn btn--ghost" href="#portfolio">Дивитись портфоліо</a>
+          </div>
+
+          <p class="hero__note">Базова ціна: <strong>2000 грн / година</strong></p>
+        </div>
+
+        <div class="hero__card">
+          <p class="hero__cardTitle">Швидкий контакт</p>
+          <p class="hero__cardText">Напиши в Telegram або Instagram — відповім швидко.</p>
+          <a class="link" href="#contacts">Перейти до контактів →</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="section">
+      <div class="container">
+        <h2>Портфоліо</h2>
+        <p class="muted">Додай свої фото в папку <strong>images</strong> і підстав у блоки нижче.</p>
+
+        <div class="grid">
+            <img src="images/DSC00862.jpg" alt="Photo 1" class="photo">
+            <img src="images/DSC00867.jpg" alt="Photo 2" class="photo">
+            <img src="images/DSC00873.jpg" alt="Photo 3" class="photo">
+            <img src="images/DSC00879.jpg" alt="Photo 4" class="photo">
+            <img src="images/DSC00888.jpg" alt="Photo 5" class="photo">
+            <img src="images/DSC00892.jpg" alt="Photo 6" class="photo">
+            <img src="images/DSC00894.jpg" alt="Photo 6" class="photo">
+            <img src="images/DSC00931.jpg" alt="Photo 6" class="photo">
+            <img src="images/DSC00935.jpg" alt="Photo 6" class="photo">
+            <img src="images/DSC00968.jpg" alt="Photo 6" class="photo">
+            <img src="images/DSC00976.jpg" alt="Photo 6" class="photo">
+            <img src="images/DSC01000.jpg" alt="Photo 6" class="photo">
+            <img src="images/DSC01017.jpg" alt="Photo 6" class="photo">
+            <img src="images/DSC01019.jpg" alt="Photo 6" class="photo">
+            <img src="images/DSC01031.jpg" alt="Photo 6" class="photo">
+            <img src="images/DSC01037.jpg" alt="Photo 6" class="photo">
+            <img src="images/DSC01051.jpg" alt="Photo 6" class="photo">
+            <img src="images/DSC01066.jpg" alt="Photo 6" class="photo">
+            <img src="images/DSC01268.jpg" alt="Photo 6" class="photo">
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section section--alt">
+      <div class="container">
+        <h2>Послуги та ціни</h2>
+
+        <div class="cards">
+          <div class="card">
+            <h3>Портрет / Контент</h3>
+            <p class="muted">Індивідуальні фото, контент для соцмереж.</p>
+            <p class="price">2000 грн / година</p>
+          </div>
+
+          <div class="card">
+            <h3>Сімейна фотосесія</h3>
+            <p class="muted">Натуральні кадри в студії або на вулиці.</p>
+            <p class="price">від 2000 грн</p>
+          </div>
+
+          <div class="card">
+            <h3>Весілля</h3>
+            <p class="muted">Репортаж + постановка, під ваш стиль.</p>
+            <p class="price">пакети — за домовленістю</p>
+          </div>
+        </div>
+
+        <div class="info">
+          <p><strong>Включено:</strong> відбір кадрів, базова ретуш, готові фото онлайн.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacts" class="section">
+      <div class="container">
+        <h2>Контакти</h2>
+        <p class="muted">Залиш контакти або напиши одразу в месенджер.</p>
+
+        <div class="contactGrid">
+          <div class="contactCard">
+            <p><strong>Telegram:</strong> @S_Edem</p>
+            <p><strong>Instagram:</strong> @edem_photo_artist</p>
+            <p><strong>Телефон:</strong> +380 99 240 13 82</p>
+            <p class="muted">* Edem Photo Artist</p>
+          </div>
+
+          <form class="form" onsubmit="event.preventDefault(); alert('Дякую! Я скоро напишу тобі 😊');">
+            <label>
+              Ім’я
+              <input type="text" placeholder="Ваше ім’я" required />
+            </label>
+            <label>
+              Телефон / Telegram
+              <input type="text" placeholder="@username або номер" required />
+            </label>
+            <label>
+              Коментар
+              <textarea placeholder="Яка фотосесія потрібна?"></textarea>
+            </label>
+            <button class="btn" type="submit">Надіслати</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="y"></span> Edem Photo Artist</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
